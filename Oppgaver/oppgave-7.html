@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 7</title>
+</head>
+<body>
+    
+
+    <script>
+    let kast;
+    let minvalue = 1;
+    let maxvalue = 12;
+    let maxvalue2 = 20;
+
+        function d4() {
+            kast = Math.floor(Math.random() * 10 % 4 + 1);
+            alert(kast)
+        }
+        function d6() {
+            kast = Math.floor(Math.random() * 10 % 6 + 1);
+            alert(kast)
+        }
+        function d8() {
+            kast = Math.floor(Math.random() * 10 % 8 + 1);
+            alert(kast)
+        }
+        function d10() {
+            kast = Math.floor(Math.random() * 10 % 10 + 1);
+            alert(kast)
+        }
+        function d12() {
+            kast = Math.floor(Math.random() % 12 * 12 + 1);
+            alert(kast)
+        }
+        function d20() {
+            kast = Math.floor(Math.random() % 20 * 20 + 1);
+            alert(kast)
+            console.log(kast)
+        }
+
+    </script>
+
+<button onclick="d4()">Kast d4 terning</button>
+<button onclick="d6()">Kast d6 terning</button>
+<button onclick="d8()">Kast d8 terning</button>
+<button onclick="d10()">Kast d10 terning</button>
+<button onclick="d12()">Kast d12 terning</button>
+<button onclick="d20()">Kast d20 terning</button>
+
+
+</body>
+</html>

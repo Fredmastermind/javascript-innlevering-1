@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 2</title>
+</head>
+<body>
+    
+    <script>
+        function sjekkInn () {
+            const date = new Date();
+            const hour = date.getHours();
+            if (date < 10) {
+                alert("God morgen din fjellgeit");
+            } else {
+                alert("God dag din fjellgeit");
+            }
+        }
+    </script>
+
+<button onclick="sjekkInn()">Sjekk Inn!</button>
+
+</body>
+</html>

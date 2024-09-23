@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 3</title>
+</head>
+<body>
+    
+    <script>
+        let sum = 0;
+        function poeng (){
+            sum += 1;
+            alert("Det er Riktig!")
+        }
+        function feil (){
+            alert("Det er FEIL!")
+        }
+        function score (){
+            alert("Din Poeng Sum er " + sum)
+        }
+
+        function question1 (){
+            document.write("Hvor mange Filmer er det om Harry Potter?")
+        }
+        question1()
+    </script>
+
+<br>
+
+    <button onclick="feil()">6 Filmer</button>
+    <button onclick="feil()">7 Filmer</button>
+    <button onclick="poeng()">8 Filmer</button>
+    <button onclick="feil()">9 Filmer</button>
+
+<br><br><br>
+
+    <script>
+        function question2 (){
+            document.write("Hvor mange Bøker er skrevet om Harry Potter?")
+        }
+        question2()
+    </script>
+
+<br>
+
+<button onclick="feil()">6 Bøker</button>
+<button onclick="poeng()">7 Bøker</button>
+<button onclick="feil()">8 Bøker</button>
+<button onclick="feil()">9 Bøker</button>
+
+<br><br><br>
+
+<script>
+    function question3 (){
+        document.write("Hvem Skrev Bøkene om Harr Potter?")
+    }
+    question3()
+</script>
+
+<br>
+
+<button onclick="feil()">Suzanne Collins</button>
+<button onclick="feil()">J.R.R Tolkien</button>
+<button onclick="feil()">Kate Atkinson</button>
+<button onclick="poeng()">J.K Rowling</button>
+
+<br><br><br>
+
+<script>
+    function question4 (){
+        document.write("Hvem Spiller Harry Potter i filmene?")
+    }
+    question4()
+</script>
+
+<br>
+
+<button onclick="feil()">Rupert Grint</button>
+<button onclick="feil()">Matthew Lewis</button>
+<button onclick="poeng()">Daniel Radcliffe</button>
+<button onclick="feil()">Tom Felton</button>
+
+<br><br><br>
+
+<button onclick="score()">Sjekk Sum</button>
+
+</body>
+</html>

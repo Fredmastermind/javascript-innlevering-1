@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 5</title>
+</head>
+<body>
+    
+
+    <script>
+        
+        alert("Skriv inn to tall!");
+        let tall1 = parseInt(prompt("Skriv inn det første tallet: "));
+        let tall2 = parseInt(prompt("Skriv inn det andre tallet: "));
+
+        function sum() {
+            let verdi = tall1 + tall2;
+            alert(tall1 + " + " + tall2 + " blir " + verdi)
+        }
+
+        function differanse() {
+            let a;
+            let temp;
+            if (tall1 < tall2) {
+                temp = tall1;
+                tall1 = tall2;
+                tall2 = temp;
+                a = tall1 - tall2;
+                alert("Differansen mellom " + tall1 + " og " + tall2 + " er " + a)
+            } else {
+                a = tall1 - tall2;
+                alert("Differansen mellom " + tall1 + " og " + tall2 + " er " + a)
+            }
+        }
+
+    sum()
+    differanse()
+    </script>
+
+
+</body>
+</html>
